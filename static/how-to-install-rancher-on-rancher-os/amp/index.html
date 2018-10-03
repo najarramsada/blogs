@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Unsplash your blog</title>
+    <title>How to install Rancher on RancherOS</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,21 +15,21 @@
     
     <meta property="og:site_name" content="BLOGS @ RAMSADA.io">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Unsplash your blog">
-    <meta property="og:description" content="Ghost blog has Unsplash app integration and makes it easier to post some great photos on your blog. Highly recommended to make use of it.Photo by Jose Llamas / UnsplashPhoto by Nuno Antunes / UnsplashPhoto by Samuel Zeller / Unsplash">
-    <meta property="og:url" content="http://localhost:2368/unsplash-your-blog/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1537790101899-8dd2f6fe5c13?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=a60f871257eb5db32cf3fbe9754d11c2">
-    <meta property="article:published_time" content="2018-09-25T08:04:07.000Z">
-    <meta property="article:modified_time" content="2018-09-25T08:06:45.000Z">
+    <meta property="og:title" content="How to install Rancher on RancherOS">
+    <meta property="og:description" content="In this guide, I am going to cover how to install Kubernetes cluster on single node using Rancher on RancherOS a VM.KubernetesKubernetes is an open-source container-orchestration system for automating deployment, scaling and management of containerized applications. It was originally designed by Google and is now maintained by the Cloud">
+    <meta property="og:url" content="http://localhost:2368/how-to-install-rancher-on-rancher-os/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1521583621977-c63c261f3054?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=49b1548d6a25af342d4132951d44abcb">
+    <meta property="article:published_time" content="2018-10-03T00:47:57.000Z">
+    <meta property="article:modified_time" content="2018-10-03T09:26:34.000Z">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Unsplash your blog">
-    <meta name="twitter:description" content="Ghost blog has Unsplash app integration and makes it easier to post some great photos on your blog. Highly recommended to make use of it.Photo by Jose Llamas / UnsplashPhoto by Nuno Antunes / UnsplashPhoto by Samuel Zeller / Unsplash">
-    <meta name="twitter:url" content="http://localhost:2368/unsplash-your-blog/">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1537790101899-8dd2f6fe5c13?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=a60f871257eb5db32cf3fbe9754d11c2">
+    <meta name="twitter:title" content="How to install Rancher on RancherOS">
+    <meta name="twitter:description" content="In this guide, I am going to cover how to install Kubernetes cluster on single node using Rancher on RancherOS a VM.KubernetesKubernetes is an open-source container-orchestration system for automating deployment, scaling and management of containerized applications. It was originally designed by Google and is now maintained by the Cloud">
+    <meta name="twitter:url" content="http://localhost:2368/how-to-install-rancher-on-rancher-os/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1521583621977-c63c261f3054?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=49b1548d6a25af342d4132951d44abcb">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Najar Ramsada">
     <meta property="og:image:width" content="1080">
-    <meta property="og:image:height" content="1619">
+    <meta property="og:image:height" content="720">
     
     <script type="application/ld+json">
 {
@@ -46,17 +46,17 @@
         "url": "http://localhost:2368/author/najar/",
         "sameAs": []
     },
-    "headline": "Unsplash your blog",
-    "url": "http://localhost:2368/unsplash-your-blog/",
-    "datePublished": "2018-09-25T08:04:07.000Z",
-    "dateModified": "2018-09-25T08:06:45.000Z",
+    "headline": "How to install Rancher on RancherOS",
+    "url": "http://localhost:2368/how-to-install-rancher-on-rancher-os/",
+    "datePublished": "2018-10-03T00:47:57.000Z",
+    "dateModified": "2018-10-03T09:26:34.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://images.unsplash.com/photo-1537790101899-8dd2f6fe5c13?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=a60f871257eb5db32cf3fbe9754d11c2",
+        "url": "https://images.unsplash.com/photo-1521583621977-c63c261f3054?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=49b1548d6a25af342d4132951d44abcb",
         "width": 1080,
-        "height": 1619
+        "height": 720
     },
-    "description": "Ghost blog has Unsplash app integration and makes it easier to post some great photos on your blog. Highly recommended to make use of it.Photo by Jose Llamas / UnsplashPhoto by Nuno Antunes / UnsplashPhoto by Samuel Zeller / Unsplash",
+    "description": "In this guide, I am going to cover how to install Kubernetes cluster on single node using Rancher on RancherOS a VM.KubernetesKubernetes is an open-source container-orchestration system for automating deployment, scaling and management of containerized applications. It was originally designed by Google and is now maintained by the Cloud",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -88,18 +88,50 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">Unsplash your blog</h1>
+                <h1 class="post-title">How to install single node Kubernetes cluster using Rancher on RancherOS</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/najar/">Najar Ramsada</a></p>
-                    <time class="post-date" datetime="2018-09-25">2018-09-25</time>
+                    <time class="post-date" datetime="2018-10-03">2018-10-03</time>
                 </section>
             </header>
             <figure class="post-image">
-                <amp-img src="https://images.unsplash.com/photo-1537790101899-8dd2f6fe5c13?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=a60f871257eb5db32cf3fbe9754d11c2" width="600" height="400" layout="responsive"></amp-img>
+                <amp-img src="https://images.unsplash.com/photo-1521583621977-c63c261f3054?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=49b1548d6a25af342d4132951d44abcb" width="600" height="400" layout="responsive"></amp-img>
             </figure>
             <section class="post-content">
 
-                <p>Ghost blog has Unsplash app integration and makes it easier to post some great photos on your blog. Highly recommended to make use of it.</p><figure class="kg-card kg-image-card"><amp-img src="https://images.unsplash.com/photo-1537724903888-33a8c4aadb8d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ&amp;s=451c6999e2d8e48d0280a65dbc9d868c" class="kg-image" width="2552" height="4096" layout="responsive"></amp-img><figcaption>Photo by <a href="https://unsplash.com/@josilito?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Jose Llamas</a> / <a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Unsplash</a></figcaption></figure><figure class="kg-card kg-image-card"><figcaption>Photo by <a href="https://unsplash.com/@onun?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Nuno Antunes</a> / <a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Unsplash</a></figcaption></figure><figure class="kg-card kg-image-card"><figcaption>Photo by <a href="https://unsplash.com/@samuelzeller?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Samuel Zeller</a> / <a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Unsplash</a></figcaption></figure>
+                <p>In this guide, I am going to cover how to install Kubernetes cluster on single node using Rancher on RancherOS a VM.</p><figure class="kg-card kg-image-card"></figure><h2 id="kubernetes">Kubernetes</h2><p>Kubernetes is an open-source container-orchestration system for automating deployment, scaling and management of containerized applications. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation.</p><h2 id="rancheros">RancherOS</h2><p><em><strong>RancherOS</strong> is the smallest, easiest way to run Docker in production. Everything in <strong>RancherOS</strong> is a container managed by Docker. This includes system services such as udev and syslog . Because it only includes the services necessary to run Docker, <strong>RancherOS</strong> is dramatically smaller than most traditional <strong>operating systems</strong>.</em></p><h2 id="rancher">Rancher</h2><p><em><strong>Rancher</strong> is deployed as a set of Docker containers. Running <strong>Rancher</strong> is as simple as launching two containers. One container as the management <strong>server</strong> and another container on a node as an agent. <strong>Rancher Server</strong> - Single Container (non-HA) <strong>Rancher Server</strong> - Single Container (non-HA) - External database.</em></p><h2 id="install-rancheros-as-a-virtual-machine">Install RancherOS as a Virtual Machine</h2><p>Download latest release of Rancher OS from <a href="https://github.com/rancher/os/releases/latest">Rancher download page on github</a>.</p><p><a href="https://github.com/rancher/os/releases/latest">https://github.com/rancher/os/releases/latest</a></p><p>Create a new Virtual Machine using typical settings and choose the downloaded rancher ISO as an installer disk. Make sure you select Linux (Other linux 4.x or later kernal 64bit) as the guest operating system.</p><p>		- 2 CPU/4-8GB RAM/40GB HDD</p><figure class="kg-card kg-image-card"></figure><figure class="kg-card kg-image-card"></figure><p>Start the VM and boot from the ISO, once the VM is up, we are going to setup a cloud-config.yml file to customise our RancherOS install. Follow below commands to customise and install RancherOS.</p><p>Open VM remote console and login as root (Rancher ISO auto logs you in as rancher user).</p><figure class="kg-card kg-image-card"></figure><p>login as root</p><pre><code>rancher@rancher:~$ sudo /bin/bash</code></pre>
+<p>change password for rancher user</p><pre><code>rancher@rancher:~$ passwd rancher</code></pre>
+<figure class="kg-card kg-image-card"></figure><p>ssh into Rancher VM from your desktop</p><pre><code>$ ssh rancher@&lt;IP_ADDRESS of rancher VM&gt;
+</code></pre>
+<p>create a cloud-config.yml file, this is required at the least for adding ssh keys</p><pre><code>vi cloud-config.yml</code></pre>
+<p>Insert the following in cloud-config.yml file. </p><pre><code>#cloud-config
+# ssh keys for access
+ssh_authorized_keys:
+  - &lt;your ssh keys here&gt;
+
+# rancherOS hostname
+hostname: &lt;hostname&gt;
+
+# rancher-network settings
+rancher:
+  network:
+    interfaces:
+      eth0:
+        dhcp: true</code></pre>
+<figure class="kg-card kg-image-card"></figure><p>Save the file and begin the installation.</p><pre><code>sudo ros install -c cloud-config.yml -d /dev/sda</code></pre>
+<p>Once the installation is finished, reboot the VM. RancherOS VM is now ready, you can login using rancher user and your ssh keys.</p><p>This is where you can now run any docker containers on this VM. You can stop here or take it forward and install Rancher and configure Kubernetes cluster for docker swarm mode.</p><h2 id="install-rancher-on-rancheros">Install Rancher on RancherOS</h2><p>Rancher runs as a docker container on RancherOS. All you have to do is simply run the container as below.</p><pre><code>docker run -d --restart=unless-stopped -p 8080:80 -p 8443:443 -v rancher:/var/lib/rancher rancher/rancher
+</code></pre>
+<blockquote>
+<p>Map port 80 to 8080 and 443 to 8443. This is required if you plan to use more than one node in cluster as the ingress proxy will need to use default port 80 and 443.</p>
+</blockquote>
+<pre><code>-p 8080:80 -p 8443:443
+</code></pre>
+<blockquote>
+<p>Use a persitent volume to retain the configuration for Rancher</p>
+</blockquote>
+<pre><code>-v rancher:/var/lib/rancher
+</code></pre>
+<p>Give it a minute or so and open up a web browser and point it to IP address of your RancherOS VM and port 8080. e.g. http://192.168.1.18:8080/</p><p>Create a password for Admin user and URL for Rancher.</p><p>Next you will need to add a Kubernetes cluster before you can deploy any services or workloads.</p><figure class="kg-card kg-image-card"></figure><p>Select Add Cluster &gt; Custom &gt; Give it a name &gt; Next.</p><figure class="kg-card kg-image-card"></figure><p>Select all three node option. This will ensure our single node can function correctly.</p><figure class="kg-card kg-image-card"></figure><p>Copy the command displayed in step 2 and run the command in RancherOS VM to add that VM as Node in the Kubernetes cluster.</p><p>Give it a minute or so and you will see "1 new node has registered".</p><figure class="kg-card kg-image-card"></figure><p>You will see this node in provisioning state.</p><figure class="kg-card kg-image-card"></figure><p>After minute or so, this node will be in Active state.</p><figure class="kg-card kg-image-card"></figure><p>Your Kubernetes cluster is now ready to use.</p><figure class="kg-card kg-image-card"></figure><p>That's it. You now have a Kubernetes cluster running on single VM. You can add more nodes as same as above.</p><p>Go ahead and download Kubeconfig file or launch the Kubectl from GUI or just deploy the apps, services from Rancher GUI.</p>
 
             </section>
 
